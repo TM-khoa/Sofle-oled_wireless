@@ -53,7 +53,7 @@ layers:
   - RSHFT
   - LGUI
   - LALT
-  - LCTRL
+  - '&term_to_vim'
   - SPACE
   - {t: lower, h: sticky}
   - ENTER
@@ -75,7 +75,7 @@ layers:
   - F10
   - F11
   - {t: '`', h: '~'}
-  - \
+  - ''
   - '['
   - '='
   - '-'
@@ -87,12 +87,12 @@ layers:
   - '&couple_curly_brackets'
   - F12
   - LSHFT
-  - '|'
+  - ''
   - '{'
   - +
   - _
   - '}'
-  - PASTE
+  - DELETE
   - '&xml_tag'
   - '*'
   - '{'
@@ -104,24 +104,24 @@ layers:
   - F8
   - F9
   - F10
-  - Ctl+Sft+T
-  - Ctl+W
-  - '['
-  - ']'
-  - ;
-  - ':'
+  - Ctl+C
+  - Ctl+V
+  - '&copy_one_line'
+  - '&term_to_vim'
+  - ','
+  - .
   - \
   - RIGHT SHIFT
   - F11
   - F12
-  - {t: default, h: toggle}
+  - LEFT ALT
   - {t: ▽, type: trans}
   - {t: lower, h: toggle, type: held}
   - {t: raise, h: toggle}
   - {t: ▽, type: trans}
   - {t: default, h: toggle}
-  - '&copy_one_line'
-  - '&term_to_vim'
+  - HOME
+  - END
   raise:
   - {t: default, h: toggle}
   - {t: BT, h: '0'}
@@ -148,11 +148,11 @@ layers:
   - PRINTSCREEN
   - HOME
   - LEFT SHIFT
-  - ''
+  - Sft+Ctl+LEFT
   - LEFT
   - DOWN
   - RIGHT
-  - ''
+  - Sft+Ctl+RIGHT
   - Sft+Ctl+LEFT ARROW
   - '1'
   - '2'
@@ -165,12 +165,12 @@ layers:
   - Ctl+C
   - Ctl+V
   - ''
-  - Ctl+C
-  - Ctl+V
-  - ''
+  - Ctl+Sft+T
+  - Ctl+W
   - ''
   - '0'
-  - ''
+  - ','
+  - .
   - ''
   - RIGHT SHIFT
   - '&copy_one_line'
@@ -185,23 +185,23 @@ layers:
   - ''
   vim_layer:
   - {t: default, h: toggle}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
-  - EP TOG
   - ''
   - ''
   - ''
   - ''
-  - BT CLR
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -226,7 +226,7 @@ layers:
   - ''
   - ''
   - ''
-  - Alt+TAB
+  - ''
   - MUTE
   - ''
   - ''
