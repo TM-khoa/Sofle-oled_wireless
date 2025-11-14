@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: sofle}
 layers:
   default:
-  - ESC
+  - {t: ESCAPE, h: '`'}
   - '1'
   - '2'
   - '3'
@@ -44,12 +44,12 @@ layers:
   - V
   - B
   - PRINTSCREEN
-  - SLEEP
+  - Ctl+Alt+DELETE
   - N
   - M
   - ','
   - .
-  - /
+  - {t: /, h: \}
   - RSHFT
   - LGUI
   - LALT
@@ -59,10 +59,10 @@ layers:
   - ENTER
   - raise
   - RCTRL
-  - {t: RIGHT ALT, h: lower}
-  - RGUI
+  - HOME
+  - END
   lower:
-  - '`'
+  - {t: default, h: toggle}
   - F1
   - F2
   - F3
@@ -74,31 +74,31 @@ layers:
   - F9
   - F10
   - F11
-  - '~'
+  - {t: '`', h: '~'}
   - \
   - '['
   - '='
   - '-'
   - ']'
-  - '6'
-  - '7'
+  - ''
+  - ''
   - '8'
-  - '['
-  - ']'
+  - {t: '[', h: ']'}
+  - {t: '{', h: '}'}
   - F12
-  - CAPS
+  - LSHFT
   - '|'
   - '{'
   - +
   - _
   - '}'
-  - ^
+  - PASTE
   - '&'
   - '*'
   - '{'
   - '}'
   - '|'
-  - PRINTSCREEN
+  - LCTRL
   - F6
   - F7
   - F8
@@ -111,7 +111,7 @@ layers:
   - ;
   - ':'
   - \
-  - WWW
+  - RIGHT SHIFT
   - F11
   - F12
   - {t: default, h: toggle}
@@ -120,69 +120,69 @@ layers:
   - {t: raise, h: toggle}
   - {t: ▽, type: trans}
   - {t: default, h: toggle}
-  - HOME
-  - END
+  - '&copy_one_line'
+  - '&term_to_vim'
   raise:
-  - BT CLR
+  - {t: default, h: toggle}
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - {t: default, h: toggle}
-  - {t: lower, h: toggle}
-  - {t: raise, h: toggle}
-  - {t: vim_layer, h: toggle}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - Ctl+Sft+UP ARROW
+  - ''
+  - ''
   - DEL
   - '&sys_reset'
-  - {t: ▽, type: trans}
-  - '&msc SCRL_UP'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - '&msc MOVE_Y(-20)'
+  - ''
+  - ''
+  - BT CLR
+  - ''
+  - ''
   - UP
-  - {t: ▽, type: trans}
+  - ''
   - PRINTSCREEN
-  - {t: ▽, type: trans}
-  - '&key_repeat'
-  - '&msc SCRL_LEFT'
-  - '&msc SCRL_DOWN'
-  - '&msc SCRL_RIGHT'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - HOME
+  - LEFT SHIFT
+  - '&msc MOVE_X(-20)'
+  - '&msc MOVE_Y(20)'
+  - '&msc MOVE_X(20)'
+  - ''
+  - ''
+  - Sft+Ctl+LEFT ARROW
   - LEFT
   - DOWN
   - RIGHT
+  - Ctl+Sft+RIGHT
   - END
-  - {t: ▽, type: trans}
-  - POWER
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LCTRL
+  - ''
+  - ''
+  - ''
+  - PASTE
+  - ''
+  - COPY
+  - PASTE
+  - ''
+  - ''
+  - Sft+Ctl+DOWN
+  - ''
+  - ''
+  - RIGHT SHIFT
+  - '&copy_one_line'
+  - '&term_to_vim'
   - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: default, h: toggle}
-  - {t: ▽, type: trans}
+  - ''
   - {t: lower, h: toggle}
   - {t: vim_layer, h: toggle}
   - {type: held}
   - {t: default, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   vim_layer:
   - BT CLR
   - {t: BT, h: '0'}
@@ -190,27 +190,13 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - W
+  - ''
   - ''
   - ''
   - ''
   - ''
   - ''
   - EP TOG
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -226,8 +212,22 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
   - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Alt+LEFT GUI
+  - MUTE
   - ''
   - ''
   - ''
