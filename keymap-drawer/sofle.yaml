@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: sofle}
 layers:
   default:
-  - {t: ESCAPE, h: '`'}
+  - ESCAPE
   - '1'
   - '2'
   - '3'
@@ -13,7 +13,7 @@ layers:
   - '9'
   - '0'
   - INSERT
-  - TAB
+  - {t: '`', h: TAB}
   - Q
   - W
   - E
@@ -22,8 +22,8 @@ layers:
   - Y
   - U
   - I
-  - O
-  - P
+  - {t: O, h: '['}
+  - {t: P, h: ']'}
   - BSPC
   - LEFT SHIFT
   - A
@@ -53,14 +53,14 @@ layers:
   - RSHFT
   - LGUI
   - LALT
-  - '&term_to_vim'
+  - {t: END, h: HOME}
   - SPACE
   - {t: lower, h: sticky}
   - ENTER
   - raise
   - RCTRL
-  - HOME
-  - END
+  - '&copy_one_line'
+  - '&term_to_vim'
   lower:
   - {t: default, h: toggle}
   - F1
@@ -73,48 +73,48 @@ layers:
   - F8
   - F9
   - F10
-  - F11
-  - {t: '`', h: '~'}
-  - ''
+  - {t: DELETE, h: F11}
+  - {t: '`', h: TAB}
   - '['
+  - ']'
   - '='
   - '-'
-  - ']'
-  - BACKSPACE
-  - '&couple_parentheses'
-  - '&couple_angle_brackets'
-  - '&couple_square_bracket'
-  - '&couple_curly_brackets'
-  - F12
+  - '&term_to_vim'
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - {t: BACKSPACE, h: F12}
   - LSHFT
   - ''
-  - '{'
+  - '&couple_square_bracket'
   - +
   - _
-  - '}'
-  - DELETE
-  - '&xml_tag'
-  - '*'
-  - '{'
-  - '}'
+  - '&couple_curly_brackets'
+  - H
+  - J
+  - K
+  - L
+  - ;
   - '|'
   - LCTRL
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - Ctl+C
-  - Ctl+V
+  - Ctl+Z
+  - '&cut_one_line'
   - '&copy_one_line'
-  - '&term_to_vim'
-  - ','
-  - .
+  - '&replace_one_line'
+  - ''
+  - '&copy_one_line'
+  - Ctl+V
+  - ''
+  - ''
+  - '&couple_angle_brackets'
+  - '&xml_tag'
   - \
   - RIGHT SHIFT
-  - F11
-  - F12
-  - LEFT ALT
+  - HOME
+  - LALT
+  - END
   - {t: ▽, type: trans}
   - {t: lower, h: toggle, type: held}
   - {t: raise, h: toggle}
@@ -137,52 +137,52 @@ layers:
   - DEL
   - TAB
   - ''
-  - ''
+  - Ctl+W
   - UP
   - '&sys_reset'
-  - BT CLR
+  - Ctl+Sft+T
   - ''
   - '4'
   - '5'
   - '6'
   - PRINTSCREEN
-  - HOME
+  - BACKSPACE
   - LEFT SHIFT
-  - Sft+Ctl+LEFT
+  - Ctl+LEFT
   - LEFT
   - DOWN
   - RIGHT
-  - Sft+Ctl+RIGHT
-  - Sft+Ctl+LEFT ARROW
+  - Ctl+RIGHT
+  - ''
   - '1'
   - '2'
   - '3'
-  - Ctl+Sft+RIGHT
-  - END
+  - '&sys_reset'
+  - ''
   - LCTRL
   - Ctl+Z
   - Ctl+X
   - Ctl+C
   - Ctl+V
-  - ''
-  - Ctl+Sft+T
-  - Ctl+W
-  - ''
+  - VOL DN
+  - HOME
+  - END
+  - VOLUME UP
   - '0'
   - ','
   - .
   - ''
-  - RIGHT SHIFT
+  - BT CLR
   - '&copy_one_line'
   - '&term_to_vim'
-  - {t: default, h: toggle}
-  - ''
+  - '&replace_one_line'
+  - SPACE
   - {t: lower, h: toggle}
   - {t: vim_layer, h: toggle}
   - {type: held}
-  - {t: default, h: toggle}
-  - ''
-  - ''
+  - RIGHT ALT
+  - HOME
+  - END
   vim_layer:
   - {t: default, h: toggle}
   - ''
@@ -200,7 +200,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - '&bootloader'
   - ''
   - ''
   - ''
@@ -218,7 +218,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - '&bootloader'
   - ''
   - LCTRL
   - ''
@@ -231,10 +231,10 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - BT CLR ALL
   - ''
   - RSHFT
-  - ''
+  - '&soft_off'
   - ''
   - ''
   - ''
@@ -243,4 +243,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - '&soft_off'
+combos:
+- p: [36, 24, 16]
+  k: '&bootloader'
+  l: [default]
