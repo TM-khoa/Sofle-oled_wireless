@@ -13,7 +13,7 @@ layers:
   - '9'
   - '0'
   - INSERT
-  - {t: '`', h: TAB}
+  - TAB
   - Q
   - W
   - E
@@ -55,7 +55,7 @@ layers:
   - LALT
   - {t: END, h: HOME}
   - SPACE
-  - {t: lower, h: sticky}
+  - lower
   - ENTER
   - raise
   - RCTRL
@@ -74,9 +74,9 @@ layers:
   - F9
   - F10
   - {t: DELETE, h: F11}
-  - {t: '`', h: TAB}
-  - '['
-  - ']'
+  - TAB
+  - '`'
+  - \
   - '='
   - '-'
   - '&term_to_vim'
@@ -87,7 +87,7 @@ layers:
   - F5
   - {t: BACKSPACE, h: F12}
   - LSHFT
-  - ''
+  - '~'
   - '&couple_square_bracket'
   - +
   - _
@@ -103,18 +103,18 @@ layers:
   - '&cut_one_line'
   - '&copy_one_line'
   - '&replace_one_line'
-  - ''
+  - '['
   - '&copy_one_line'
   - Ctl+V
-  - ''
+  - ']'
   - ''
   - '&couple_angle_brackets'
   - '&xml_tag'
   - \
   - RIGHT SHIFT
-  - HOME
+  - LEFT WIN
   - LALT
-  - END
+  - {t: END, h: HOME}
   - {t: ▽, type: trans}
   - {t: lower, h: toggle, type: held}
   - {t: raise, h: toggle}
@@ -199,7 +199,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - '&msc SCRL_UP'
   - '&bootloader'
   - ''
   - ''
@@ -209,11 +209,11 @@ layers:
   - ''
   - ''
   - LSHFT
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '&msc MOVE_X(-15)'
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_RIGHT'
+  - '&msc MOVE_X(15)'
   - ''
   - ''
   - ''
@@ -226,7 +226,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - PLAY PAUSE
   - MUTE
   - ''
   - ''
