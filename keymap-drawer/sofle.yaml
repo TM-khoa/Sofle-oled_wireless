@@ -37,7 +37,7 @@ layers:
   - L
   - ;
   - ''''
-  - LCTRL
+  - RIGHT CONTROL
   - Z
   - X
   - C
@@ -58,7 +58,7 @@ layers:
   - lower
   - ENTER
   - raise
-  - RCTRL
+  - '&cut_one_line'
   - '&copy_one_line'
   - '&term_to_vim'
   lower:
@@ -73,7 +73,7 @@ layers:
   - F8
   - F9
   - F10
-  - {t: DELETE, h: F11}
+  - F11
   - TAB
   - '`'
   - \
@@ -104,10 +104,10 @@ layers:
   - '&copy_one_line'
   - '&replace_one_line'
   - '['
-  - '&copy_one_line'
+  - PLAY PAUSE
   - Ctl+V
   - ']'
-  - ''
+  - '&couple_parentheses'
   - '&couple_angle_brackets'
   - '&xml_tag'
   - \
@@ -139,7 +139,7 @@ layers:
   - ''
   - Ctl+W
   - UP
-  - '&sys_reset'
+  - ''
   - Ctl+Sft+T
   - ''
   - '4'
@@ -148,11 +148,11 @@ layers:
   - PRINTSCREEN
   - BACKSPACE
   - LEFT SHIFT
-  - Ctl+LEFT
+  - Ctl+Sft+LEFT
   - LEFT
   - DOWN
   - RIGHT
-  - Ctl+RIGHT
+  - Ctl+Sft+RIGHT
   - ''
   - '1'
   - '2'
@@ -165,24 +165,24 @@ layers:
   - Ctl+C
   - Ctl+V
   - VOL DN
-  - HOME
-  - END
+  - PREVIOUS
+  - NEXT
   - VOLUME UP
   - '0'
   - ','
   - .
   - ''
-  - BT CLR
-  - '&copy_one_line'
-  - '&term_to_vim'
+  - RSHIFT
+  - LEFT GUI
+  - LEFT ALT
   - '&replace_one_line'
   - SPACE
   - {t: lower, h: toggle}
   - {t: vim_layer, h: toggle}
   - {type: held}
   - RIGHT ALT
-  - HOME
-  - END
+  - ''
+  - ''
   vim_layer:
   - {t: default, h: toggle}
   - ''
@@ -242,7 +242,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - BT CLR
   - '&soft_off'
 combos:
 - p: [36, 24, 16]
