@@ -92,10 +92,10 @@ layers:
   - +
   - _
   - '&couple_curly_brackets'
-  - H
-  - J
-  - K
-  - L
+  - Ctl+Sft+LEFT ARROW
+  - Sft+DOWN ARROW
+  - Sft+UP ARROW
+  - Sft+Ctl+RIGHT ARROW
   - ;
   - '|'
   - LCTRL
@@ -105,7 +105,7 @@ layers:
   - '&replace_one_line'
   - '['
   - PLAY PAUSE
-  - Ctl+V
+  - CAPS
   - ']'
   - '&couple_parentheses'
   - '&couple_angle_brackets'
@@ -119,8 +119,8 @@ layers:
   - {t: lower, h: toggle, type: held}
   - {t: raise, h: toggle}
   - {t: ▽, type: trans}
-  - {t: default, h: toggle}
-  - HOME
+  - RCTRL
+  - RIGHT ALT
   - END
   raise:
   - {t: default, h: toggle}
@@ -160,10 +160,10 @@ layers:
   - '&sys_reset'
   - ''
   - LCTRL
-  - Ctl+Z
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
+  - ''
+  - ''
+  - ''
+  - ''
   - VOL DN
   - PREVIOUS
   - NEXT
@@ -175,12 +175,12 @@ layers:
   - RSHIFT
   - LEFT GUI
   - LEFT ALT
-  - '&replace_one_line'
+  - '&HomePasteSpace'
   - SPACE
   - {t: lower, h: toggle}
   - {t: vim_layer, h: toggle}
   - {type: held}
-  - RIGHT ALT
+  - '&EndSpacePaste'
   - ''
   - ''
   vim_layer:
