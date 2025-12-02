@@ -75,10 +75,10 @@ layers:
   - F10
   - F11
   - TAB
-  - '`'
+  - '~'
   - \
-  - '='
-  - '-'
+  - +
+  - _
   - '&term_to_vim'
   - F1
   - F2
@@ -87,10 +87,10 @@ layers:
   - F5
   - {t: BACKSPACE, h: F12}
   - LSHFT
-  - '~'
+  - '`'
   - '&couple_square_bracket'
-  - +
-  - _
+  - '='
+  - '-'
   - '&couple_curly_brackets'
   - Ctl+Sft+LEFT ARROW
   - Sft+DOWN ARROW
@@ -102,12 +102,12 @@ layers:
   - Ctl+Z
   - '&cut_one_line'
   - '&copy_one_line'
-  - '&replace_one_line'
+  - '{'
   - '['
   - PLAY PAUSE
   - CAPS
   - ']'
-  - '&couple_parentheses'
+  - '}'
   - '&couple_angle_brackets'
   - '&xml_tag'
   - \
@@ -192,37 +192,37 @@ layers:
   - ''
   - ''
   - ''
+  - '&msc MOVE_Y(20)'
   - ''
   - ''
   - ''
   - ''
+  - ''
+  - ''
+  - ''
+  - '&bootloader'
   - ''
   - ''
   - ''
   - '&msc SCRL_UP'
-  - '&bootloader'
-  - ''
-  - ''
-  - ''
-  - ''
   - ''
   - ''
   - ''
   - LSHFT
-  - '&msc MOVE_X(-15)'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&msc MOVE_X(-20)'
   - '&msc SCRL_LEFT'
   - '&msc SCRL_DOWN'
   - '&msc SCRL_RIGHT'
-  - '&msc MOVE_X(15)'
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&bootloader'
+  - '&msc MOVE_X(20)'
   - ''
   - LCTRL
-  - ''
-  - ''
+  - '&bootloader'
+  - BT CLR ALL
   - ''
   - ''
   - ''
@@ -230,8 +230,8 @@ layers:
   - MUTE
   - ''
   - ''
+  - '&msc MOVE_Y(-20)'
   - ''
-  - BT CLR ALL
   - ''
   - RSHFT
   - '&soft_off'
@@ -242,8 +242,8 @@ layers:
   - ''
   - ''
   - ''
-  - BT CLR
-  - '&soft_off'
+  - ''
+  - ''
 combos:
 - p: [36, 24, 16]
   k: '&bootloader'
