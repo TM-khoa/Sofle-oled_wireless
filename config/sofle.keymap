@@ -148,11 +148,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&to 0      &kp F1     &kp F2                  &kp F3          &kp F4             &kp F5                                                &kp F6                  &kp F7               &kp F8                  &kp F9                   &kp F10   &kp F11
-&kp TAB    &kp GRAVE  &kp BACKSLASH           &kp EQUAL       &kp MINUS          &term_to_vim                                          &kp F1                  &kp F2               &kp F3                  &kp F4                   &kp F5    &mt F12 BACKSPACE
-&kp LSHFT  &kp TILDE  &couple_square_bracket  &kp PLUS        &kp UNDERSCORE     &couple_curly_brackets                                &kp LC(LS(LEFT_ARROW))  &kp LS(DOWN_ARROW)   &kp LS(UP_ARROW)        &kp LS(LC(RIGHT_ARROW))  &kp SEMI  &kp PIPE
-&kp LCTRL  &kp LC(Z)  &cut_one_line           &copy_one_line  &replace_one_line  &kp LEFT_BRACKET        &kp C_PLAY_PAUSE    &kp CAPS  &kp RIGHT_BRACKET       &couple_parentheses  &couple_angle_brackets  &xml_tag                 &kp BSLH  &kp RIGHT_SHIFT
-                      &kp LEFT_WIN            &kp LALT        &mt HOME END       &trans                  &to 1               &to 2     &trans                  &kp RCTRL            &kp RIGHT_ALT           &kp END
+&to 0      &kp F1     &kp F2                  &kp F3          &kp F4          &kp F5                                                &kp F6                  &kp F7              &kp F8                  &kp F9                   &kp F10   &kp F11
+&kp TAB    &kp TILDE  &kp BACKSLASH           &kp PLUS        &kp UNDERSCORE  &term_to_vim                                          &kp F1                  &kp F2              &kp F3                  &kp F4                   &kp F5    &mt F12 BACKSPACE
+&kp LSHFT  &kp GRAVE  &couple_square_bracket  &kp EQUAL       &kp MINUS       &couple_curly_brackets                                &kp LC(LS(LEFT_ARROW))  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)        &kp LS(LC(RIGHT_ARROW))  &kp SEMI  &kp PIPE
+&kp LCTRL  &kp LC(Z)  &cut_one_line           &copy_one_line  &kp LEFT_BRACE  &kp LEFT_BRACKET        &kp C_PLAY_PAUSE    &kp CAPS  &kp RIGHT_BRACKET       &kp RIGHT_BRACE     &couple_angle_brackets  &xml_tag                 &kp BSLH  &kp RIGHT_SHIFT
+                      &kp LEFT_WIN            &kp LALT        &mt HOME END    &trans                  &to 1               &to 2     &trans                  &kp RCTRL           &kp RIGHT_ALT           &kp END
             >;
 
             sensor-bindings =
@@ -193,11 +193,11 @@
 
             label = "vim_layer";
             bindings = <
-&to 0      &none             &none           &none           &none            &none                                            &none  &none  &none       &none           &none        &none
-&none      &none             &none           &msc SCRL_UP    &bootloader      &none                                            &none  &none  &none       &none           &none        &none
-&kp LSHFT  &msc MOVE_X(-15)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &msc MOVE_X(15)                                  &none  &none  &none       &none           &bootloader  &none
-&kp LCTRL  &none             &none           &none           &none            &none            &kp C_PLAY_PAUSE    &kp K_MUTE  &none  &none  &none       &bt BT_CLR_ALL  &none        &kp RSHFT
-                             &soft_off       &none           &none            &none            &to 0               &none       &none  &none  &bt BT_CLR  &soft_off
+&to 0      &none        &none           &none  &none        &none                                  &none             &none           &msc MOVE_Y(20)   &none            &none            &none
+&none      &none        &none           &none  &bootloader  &none                                  &none             &none           &msc SCRL_UP      &none            &none            &none
+&kp LSHFT  &none        &none           &none  &none        &none                                  &msc MOVE_X(-20)  &msc SCRL_LEFT  &msc SCRL_DOWN    &msc SCRL_RIGHT  &msc MOVE_X(20)  &none
+&kp LCTRL  &bootloader  &bt BT_CLR_ALL  &none  &none        &none  &kp C_PLAY_PAUSE    &kp K_MUTE  &none             &none           &msc MOVE_Y(-20)  &none            &none            &kp RSHFT
+                        &soft_off       &none  &none        &none  &to 0               &none       &none             &none           &none             &none
             >;
 
             sensor-bindings =
